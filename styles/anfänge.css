@@ -1,0 +1,236 @@
+.top_heading {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h1 {
+    text-align: left;
+}
+
+.heading {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* interactive Map */
+
+.interactiveMap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.interactiveMap img {
+    width: 1100px;
+    height: 800px;
+}
+
+.interactiveMap button {
+    background-color: burlywood;
+    color: black;
+    font-size: 14px;
+    font-family: segoe script;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:  	#708090;
+    cursor: pointer;
+    text-align: center;
+}
+
+.interactiveMap button:hover {
+    background-color:  	rgb(204, 158, 98);
+    font-size: 16px;
+}
+
+.interactiveMap button:active {
+    background-color: rgb(158, 121, 73);
+}
+
+.interactiveMap .btn_0 {
+    position: absolute;
+    top: 51%;
+    left: 48%;
+}
+
+.interactiveMap .btn_1 {
+    position: absolute;
+    top: 48%;
+    left: 67%;
+}
+
+.interactiveMap .btn_2 {
+    position: absolute;
+    top: 22%;
+    left: 57%;
+}
+
+.interactiveMap .btn_3 {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+}
+
+.box {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+}
+
+
+/* styled div elements */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container .red {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(112, 19, 19); 
+    border-radius: 100%;
+}
+
+.container .red:hover {
+    background-color: rgb(44, 7, 7);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.container .green {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(15, 63, 15); 
+    border-radius: 15%;
+    border: 10px solid rgb(15, 63, 15);
+}
+
+.container .green:hover {
+    background: none;
+    border: 10px solid rgb(15, 63, 15);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+
+.container .blue {
+    width: 200px;
+    height: 200px;
+    border: 10px solid rgb(23, 23, 90);
+}
+
+.container .blue:hover {
+    border: 10px solid rgb(23, 23, 90);
+    background-color: rgb(23, 23, 90);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+
+/* Animationen :D */
+
+
+
+.wrapper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    margin-bottom: 80px;
+}
+
+.effect1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(112, 19, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: jitter;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jitter {
+    0% {background-color: rgb(151, 120, 19); left: 0px; top: 0px;}
+    25% {background-color: rgb(23, 23, 90); left: 20px; top: 0px;}
+    50% {background-color: rgb(151, 120, 19); left: 0px; top: 0px;}
+    75% {background-color: rgb(15, 63, 15); left: -20px; top: 0px;}
+    100% {background-color: rgb(151, 120, 19); left: 0px; top: 0px;}
+}
+
+.effect2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgb(112, 19, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+    0% {width: 100px; height: 100px; border: 20px;}
+    100% {border: 25px solid rgb(112, 19, 19);}
+}
+
+.effect3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: rainbow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0% {background-color: red;}
+    16.66% {background-color: orange;}
+    33.33% {background-color: yellow;}
+    50% {background-color: green;}
+    66.66% {background-color: blue;}
+    83.33% {background-color: purple;}
+    100% {background-color: red;}
+}
+
+.effect4 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}

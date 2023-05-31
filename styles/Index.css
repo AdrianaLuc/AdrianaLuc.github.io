@@ -1,0 +1,43 @@
+/* main section */
+
+main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    display: flex;
+    background-image: url('../images/back1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main_intro h1 {
+    font-size: 70px;
+    line-height: 80px;
+}
+
+main .main_intro p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+main .main_intro a {
+   text-align: center;
+   font-size: 18px;
+   text-decoration: none;
+   display: block;
+   color: black;
+   background-color: rgb(112, 19, 19);
+   padding: 10px 20px;
+   width: fit-content;
+   margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+main .main_intro a:hover {
+    background-color: rgb(61, 10, 10);
+    color: white;
+}

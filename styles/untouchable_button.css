@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#untouchable_button {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 2rem;
+    background-color: rgb(112, 19, 19);
+    color: white;
+}
+
+.box {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
