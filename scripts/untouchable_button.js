@@ -5,7 +5,7 @@ const OFFSET = 100
 /* link to cookies */
 
 function linkCookies() {
-    location.replace("file:///C:/Users/User/Desktop/TestWebsite/cookies.html")
+    location.replace("https://adrianaluc.github.io/cookies.html")
 }
 
 /* untouchable button */
